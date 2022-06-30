@@ -20,7 +20,7 @@ $data = array();
 while($row = mysqli_fetch_assoc($result)) {
     $data['id'] = $row['id'];
     $data['name'] = $row['name'];
-    $data['url'] = 'http://' . $_SERVER['HTTP_HOST'] . '/uploadretrofit/uploads/images/' . $row['name'];
+    $data['url'] = 'http://' . $_SERVER['HTTP_HOST'] . '/uploadretrofit/api/uploads/images/' . $row['name'];
 }
 
 // return json as response
